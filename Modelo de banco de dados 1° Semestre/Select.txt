@@ -1,0 +1,2 @@
+SELECT*FROM departamento WHERE dNome='TI' OR dNome='Financeiro';
+SELECT*FROM departamento WHERE NOT dNome='Juridico';

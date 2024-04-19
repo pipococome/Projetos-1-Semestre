@@ -1,0 +1,7 @@
+Cliente (nome_cliente, CNPJ(PK), insc_estadual)
+
+Produto (Cod_produto(PK), Descrição, Valor_unitário, unidade)
+
+Pedido (numero_pedido(PK), CNPJ(FK))
+
+Itens_do_pedido (numero_pedido(FK), Cod_produto(FK), qtde)

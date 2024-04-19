@@ -1,0 +1,13 @@
+operadores especiais:
+IS NULL ou IS NOT NULL
+BETWENN
+LIKE 
+IN
+
+exemplo com like:
+SELECT * FROM funcionario WHERE Sobrenome LIKE '%a'-------que termina com a
+SELECT * FROM funcionario WHERE Sobrenome LIKE 's%'-------- que começa com s
+
+
+exemplo com in:
+SELECT*FROM funcionario WHERE Nome IN('Carol','Joaquim','Eric');

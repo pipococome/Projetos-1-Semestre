@@ -1,0 +1,12 @@
+ESTRUTURA UPDATE
+UPDATE table_name
+SET column1 = value1,column2 = value2, ...
+WHERE condition;
+
+UPDATE departamento
+SET nome='Vendas'
+WHERE codigo=1;
+
+UPDATE departamento
+SET nome='Vendas', localizacao='ADM02'
+WHERE codigo=2;

@@ -1,0 +1,5 @@
+Cliente (Nº Cliente(PK), nome, morada, localidade, Cod_postal)
+
+Agência (Cod_agência(PK), nome_agência, nome_gerente)
+
+Empréstimos (Nº_empréstimos(PK), taxa_juro, valor_empréstimo, cod_cliente, cod_agência)

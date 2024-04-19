@@ -1,0 +1,9 @@
+ESTRUTURA DELETE
+DELETE FROM table_name
+WHERE condition;
+
+DELETE FROM departamento
+WHERE codigo=2;
+
+DELETE FROM departamento
+WHERE localizacao='adm05';

@@ -1,0 +1,3 @@
+INSERE VALORES
+INSERT INTO departamento (codigo, nome, localizacao, limite_lotacao) 
+VALUES (‘1', 'TI', 'Adm04', '20');

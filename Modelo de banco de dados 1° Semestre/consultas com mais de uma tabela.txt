@@ -1,0 +1,42 @@
+Consulta com apelidos:
+
+SELECT cf.idFuncionario,cf.aprovado,f.Nome
+FROM curso_funcionario cf,funcionario f
+WHERE cf.aprovado='S' AND cf.idFuncionario=f.idFuncionario
+
+
+
+Consulta com mais de uma tabela:
+
+SELECT f.nome, d.dnome
+FROM departamento d, funcionario f
+where f.idDepartamento=d.idDepartamento;
+
+
+
+
+consulta com 3 tabelas:
+
+SELECT f.Nome, f.sobrenome, d.dnome, d.orcamento, de.idade
+FROM departamento d, funcionario f, dependente de
+where d.idDepartamento=f.idDpeartamento
+AND f.idFuncionario=de.idfuncionario
+
+
+
+
+selecionar dados de uma tabela:
+
+SELECT f.nome, d.dNome
+FROM departamento d, funcionario f
+where f.idDepartamento=d.idDepartamento AND f.idDepartamento=1
+
+
+
+
+
+selecionar dados de um departamento:
+
+SELECT f.nome, d.dNome
+FROM departamento d, funcionario f
+where f.idDepartamento AND d.dNome='TI'

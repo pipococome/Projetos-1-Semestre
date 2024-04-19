@@ -1,0 +1,21 @@
+FOREING KEY
+CREATE table funcionario
+( matricula int,
+ nome varchar(50) not null,
+ cpf int unique,
+ cargo varchar(30) not null,
+ cod_departamento int,
+ PRIMARY KEY (matricula),
+ FOREIGN KEY (cod_departamento) REFERENCES Departamento(codigo)
+);
+
+DEPENDENTE
+CREATE table dependente
+( codigodep int PRIMARY KEY,
+codigofunc int not null,
+nomedep varchar(30) not null,
+data_nasc date,
+FOREIGN KEY(codigofunc) REFERENCES funcionario(matricula)
+ON DELETE CASCADE
+ON UPDATE CASCADE);
+

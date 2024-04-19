@@ -1,0 +1,23 @@
+funções de agregação:
+COUNT
+AVG
+SUM
+MIN
+MAX
+
+
+exemplos:
+SELECT COUNT(idFuncionario) FROM funcionario;
+SELECT MIN(Orcamento) FROM departamento;
+SELECT AVG(Orcamento) FROM departamento;
+SELECT SUM(Orcamento*0.25) AS acrescimo FROM departamento;
+
+GROUP BY coluna 1;
+HAVING AVG (coluna 1) > 100;
+ORDER BY coluna 2;
+
+exemplo:
+SELECT*FROM departamento ORDER BY Orcamento;
+SELECT*FROM departamento ORDER BY Orcamento DESC;
+SELECT*FROM departamento ORDER BY dNome;
+SELECT*FROM departamento ORDER BY dNome DESC;
